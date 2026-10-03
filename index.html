@@ -411,7 +411,7 @@
         }
       }
 
-      const map = L.map('interactive-map').setView([3.4372, -76.5225], 13);
+      const map = L.map('interactive-map').setView([3.4372, -76.5225], 12.8);
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '© OpenStreetMap contributors',
@@ -425,61 +425,30 @@
               <path d="M12 0c-6.627 0-12 5.373-12 12 0 6.627 5.373 12 12 12s12-5.373 12-12-5.373-12-12-12zm0 22c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z"/>
             </svg>
           `)}`,
-          iconSize: [32, 32],
-          iconAnchor: [16, 16],
-          popupAnchor: [0, -16]
+          iconSize: [30, 30],
+          iconAnchor: [15, 15],
+          popupAnchor: [0, -12]
         });
       };
 
-      const edificacionesIcon = createIcon('#22c55e');
-      const edificaciones = [
-        { lat: 3.4372, lng: -76.5225, name: 'Simón Bolívar Monumentum', type: 'edificaciones' },
-        { lat: 3.4411, lng: -76.5294, name: 'La Ermita', type: 'edificaciones' },
-        { lat: 3.4321, lng: -76.5316, name: 'Solidarity Monument', type: 'edificaciones' }
+      const exactMarkers = [
+        { name: 'Simón Bolívar Monumentum', lat: 3.4467, lng: -76.5251, category: 'edificaciones', color: '#22c55e' },
+        { name: 'La Ermita', lat: 3.4491, lng: -76.5344, category: 'edificaciones', color: '#22c55e' },
+        { name: 'Solidarity Monument', lat: 3.4427, lng: -76.5185, category: 'edificaciones', color: '#22c55e' },
+        { name: 'Plazoleta Jairo Varela', lat: 3.4595, lng: -76.5431, category: 'parques', color: '#22c55e' },
+        { name: 'Cat Park', lat: 3.4695, lng: -76.5353, category: 'parques', color: '#22c55e' },
+        { name: 'De la Cruz Hill Artisan Park', lat: 3.4698, lng: -76.5605, category: 'parques', color: '#22c55e' },
+        { name: 'Salsa Museum', lat: 3.4523, lng: -76.5236, category: 'museos', color: '#ef4444' },
+        { name: 'Cali Zoo', lat: 3.3959, lng: -76.4874, category: 'museos', color: '#ef4444' },
+        { name: 'Caliwood Museum of Cinematography', lat: 3.4528, lng: -76.5318, category: 'museos', color: '#ef4444' },
+        { name: 'Christ the King Monument', lat: 3.4592, lng: -76.5051, category: 'miradores', color: '#ef4444' },
+        { name: 'Sebastián de Belalcázar Viewpoint', lat: 3.4496, lng: -76.5160, category: 'miradores', color: '#ef4444' },
+        { name: 'Hill of the Three Crosses', lat: 3.4681, lng: -76.4907, category: 'miradores', color: '#ef4444' }
       ];
 
-      edificaciones.forEach(place => {
-        L.marker([place.lat, place.lng], { icon: edificacionesIcon })
-          .bindPopup(`<div class="popup"><h4>${place.name}</h4><p class="popup-type">Edificación Histórica</p></div>`)
-          .addTo(map);
-      });
-
-      const parquesIcon = createIcon('#22c55e');
-      const parques = [
-        { lat: 3.4456, lng: -76.5152, name: 'Plazoleta Jairo Varela', type: 'parques' },
-        { lat: 3.4289, lng: -76.5168, name: 'Cat Park', type: 'parques' },
-        { lat: 3.4502, lng: -76.5501, name: 'De la Cruz Hill Artisan Park', type: 'parques' }
-      ];
-
-      parques.forEach(place => {
-        L.marker([place.lat, place.lng], { icon: parquesIcon })
-          .bindPopup(`<div class="popup"><h4>${place.name}</h4><p class="popup-type">Parque</p></div>`)
-          .addTo(map);
-      });
-
-      const museosIcon = createIcon('#ef4444');
-      const museos = [
-        { lat: 3.4341, lng: -76.5342, name: 'Salsa Museum', type: 'museos' },
-        { lat: 3.3847, lng: -76.4821, name: 'Cali Zoo', type: 'museos' },
-        { lat: 3.4378, lng: -76.5189, name: 'Caliwood Museum of Cinematography', type: 'museos' }
-      ];
-
-      museos.forEach(place => {
-        L.marker([place.lat, place.lng], { icon: museosIcon })
-          .bindPopup(`<div class="popup"><h4>${place.name}</h4><p class="popup-type">Museo</p></div>`)
-          .addTo(map);
-      });
-
-      const miradoresIcon = createIcon('#ef4444');
-      const miradores = [
-        { lat: 3.4839, lng: -76.5039, name: 'Christ the King Monument', type: 'miradores' },
-        { lat: 3.4756, lng: -76.5128, name: 'Sebastián de Belalcázar Viewpoint', type: 'miradores' },
-        { lat: 3.4912, lng: -76.4987, name: 'Hill of the Three Crosses', type: 'miradores' }
-      ];
-
-      miradores.forEach(place => {
-        L.marker([place.lat, place.lng], { icon: miradoresIcon })
-          .bindPopup(`<div class="popup"><h4>${place.name}</h4><p class="popup-type">Mirador</p></div>`)
+      exactMarkers.forEach((place) => {
+        const marker = L.marker([place.lat, place.lng], { icon: createIcon(place.color) })
+          .bindPopup(`<div class="popup"><h4>${place.name}</h4><p class="popup-type">${place.category === 'edificaciones' || place.category === 'parques' ? 'Lugar icónico' : 'Experiencia'} </p></div>`)
           .addTo(map);
       });
     </script>
