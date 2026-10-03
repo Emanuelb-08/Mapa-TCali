@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mapa de navegacion turistico de Cali</title>
+    <meta
+      name="description"
+      content="Mapa de navegación turístico de Cali: descubre sitios destacados, rutas y experiencias en la ciudad."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <div class="brand">Cali Tour</div>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#iconic">Lugares Icónicos</a></li>
+          <li><a href="#experiences">Experiencias</a></li>
+          <li><a href="#events">Eventos</a></li>
+          <li><a href="#gastronomy">Gastronomía</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-content" id="inicio">
+        <div class="hero-text">
+          <p class="eyebrow">Descubre Cali</p>
+          <h1>mapa de navegacion turistico de Cali</h1>
+          <p class="subtitle">
+            Explora los mejores destinos, barrios, gastronomía y experiencias más
+            representativas de la capital vallecaucana.
+          </p>
+          <div class="cta-group">
+            <a class="primary-btn" href="#iconic">Ver lugares</a>
+            <a class="secondary-btn" href="#experiences">Explorar experiencias</a>
+          </div>
+        </div>
+
+        <div class="map-card" aria-label="Mapa turístico conceptual de Cali">
+          <div class="map-pin pin-1">1</div>
+          <div class="map-pin pin-2">2</div>
+          <div class="map-pin pin-3">3</div>
+          <div class="map-pin pin-4">4</div>
+          <div class="route route-1"></div>
+          <div class="route route-2"></div>
+          <div class="route route-3"></div>
+          <div class="map-label label-1">Centro</div>
+          <div class="map-label label-2">Cristo Rey</div>
+          <div class="map-label label-3">Jardín</div>
+          <div class="map-label label-4">Siloé</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- SECTION 1: ICONIC PLACES -->
+      <section class="main-section" id="iconic">
+        <div class="section-header">
+          <h2>Lugares Icónicos</h2>
+          <p class="section-subtitle">Descubre los sitios más emblemáticos de Cali</p>
+        </div>
+
+        <!-- Subsection 1: Edifications -->
+        <div class="subsection">
+          <h3 class="subsection-title">Edificaciones Históricas</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1518235506717-e1ed3306a326?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Monumento a Simón Bolívar</h4>
+                  <p>Icónico monumento dedicado al libertador, situado en una plaza central de Cali.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1519167271335-cc4d3b3b6171?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>La Ermita</h4>
+                  <p>Histórica iglesia blanca que se destaca por su arquitectura colonial y significado cultural.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Monumento de la Solidaridad</h4>
+                  <p>Símbolo de unidad y fraternidad ubicado en un lugar estratégico de la ciudad.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+
+        <!-- Subsection 2: Parks -->
+        <div class="subsection">
+          <h3 class="subsection-title">Parques y Plazas</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69b13d835?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Plazoleta Jairo Varela</h4>
+                  <p>Espacio dedicado al legendario compositor, perfecto para disfrutar de música y cultura.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1444893686981-da7d72ad7615?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Parque del Gato</h4>
+                  <p>Parque familiar con ambiente relajado, ideal para paseos y actividades recreativas.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Parque Artesanal Loma de la Cruz</h4>
+                  <p>Espacio con vistas panorámicas que promueve el arte y la artesanía local.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: EXPERIENCES -->
+      <section class="main-section" id="experiences">
+        <div class="section-header">
+          <h2>Experiencias Únicas</h2>
+          <p class="section-subtitle">Vive momentos inolvidables en Cali</p>
+        </div>
+
+        <!-- Subsection 1: Locations -->
+        <div class="subsection">
+          <h3 class="subsection-title">Museos y Atractivos</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1475883002705-46d6cfb3f1cb?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Museo de la Salsa</h4>
+                  <p>Sumérgete en la historia, ritmo y pasión de la música salsa más auténtica.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Zoológico de Cali</h4>
+                  <p>Explora la biodiversidad con más de 300 especies de fauna local e internacional.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Caliwood Museo de la Cinematografía</h4>
+                  <p>Descubre la magia del cine y la historia audiovisual de la región.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+
+        <!-- Subsection 2: Viewpoints -->
+        <div class="subsection">
+          <h3 class="subsection-title">Miradores y Vistas Panorámicas</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Monumento a Cristo Rey</h4>
+                  <p>Majestuosa estatua con vistas espectaculares de toda la ciudad y el valle.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1464207687429-7505649dae38?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Mirador Sebastián de Belalcázar</h4>
+                  <p>Punto privilegiado que ofrece panorámicas impresionantes al atardecer.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Cerro de las Tres Cruces</h4>
+                  <p>Lugar sagrado con significado histórico y vistas panorámicas incomparables.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: EVENTS -->
+      <section class="main-section" id="events">
+        <div class="section-header">
+          <h2>Eventos y Festivales</h2>
+          <p class="section-subtitle">Celebraciones que no puedes perderte</p>
+        </div>
+
+        <!-- Subsection 1: Holidays -->
+        <div class="subsection">
+          <h3 class="subsection-title">Ferias y Celebraciones</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Feria Internacional del Libro</h4>
+                  <p>Encuentro literario donde confluyen autores, editores y amantes de la lectura.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Feria de Cali</h4>
+                  <p>Tradicional festividad con desfiles, conciertos, competencias de salsa y diversión.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Feria Internacional de Cine de Cali</h4>
+                  <p>Evento cinematográfico que reúne a cineastas y cinéfilos de todo el mundo.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+
+        <!-- Subsection 2: Festivals -->
+        <div class="subsection">
+          <h3 class="subsection-title">Festivales de Música y Arte</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Festival Petronio Álvarez</h4>
+                  <p>Celebración de la música y cultura afrodescendiente con ritmos tradicionales.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1511379938547-c1f69b13d835?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Festival Mundial de la Salsa</h4>
+                  <p>El mayor festival de salsa del mundo donde reina la música, danza y alegría.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1460749411175-04bf5292ceea?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Festival Internacional de Teatro de Cali</h4>
+                  <p>Encuentro de arte teatral con compañías nacionales e internacionales.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: GASTRONOMY -->
+      <section class="main-section" id="gastronomy">
+        <div class="section-header">
+          <h2>Gastronomía Caleña</h2>
+          <p class="section-subtitle">Sabores auténticos de la región</p>
+        </div>
+
+        <!-- Subsection 1: Cultural Dishes -->
+        <div class="subsection">
+          <h3 class="subsection-title">Platos Típicos</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Chuleta Valluna</h4>
+                  <p>Deliciosa chuleta de cerdo acompañada de arepa, frijoles y guacamole casero.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1476124369162-f4978b46c22d?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Sancocho de Gallina</h4>
+                  <p>Caldo tradicional abundante con papa, plátano y verduras frescas.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1455619452474-d2be8b1e4e20?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Arroz Atollado</h4>
+                  <p>Arroz cremoso con carnes variadas, verduras y un toque de cilantro fresco.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+
+        <!-- Subsection 2: Traditional Sweets -->
+        <div class="subsection">
+          <h3 class="subsection-title">Dulces Tradicionales</h3>
+          <div class="carousel">
+            <div class="carousel-container">
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Cholado</h4>
+                  <p>Refrescante mezcla de hielo picado, frutas, jarabe de horchata y helado.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1599599810694-b5ac4dd33cdc?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Cocada</h4>
+                  <p>Dulce tradicional hecho con coco rallado y panela, típico de la región.</p>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-image" style="background-image: url('https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80')">
+                  <div class="slide-overlay"></div>
+                </div>
+                <div class="slide-content">
+                  <h4>Manjar Blanco</h4>
+                  <p>Postre cremoso y suave a base de leche y azúcar, exquisito deleite vallecaucano.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-btn prev" onclick="moveSlide(-1, this)">❮</button>
+            <button class="carousel-btn next" onclick="moveSlide(1, this)">❯</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Cali Tour • Tu guía turística en la ciudad</p>
+    </footer>
+
+    <script>
+      function moveSlide(direction, button) {
+        const carousel = button.closest('.carousel');
+        const container = carousel.querySelector('.carousel-container');
+        const slides = container.querySelectorAll('.slide');
+        const firstSlide = slides[0];
+        
+        if (direction === 1) {
+          // Move to next slide
+          container.appendChild(firstSlide);
+        } else {
+          // Move to previous slide
+          container.insertBefore(slides[slides.length - 1], firstSlide);
+        }
+      }
+    </script>
+  </body>
+</html>
